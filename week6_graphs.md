@@ -1,41 +1,55 @@
-# Week 6: The Social Network (Graphs)
+# 🕸️ Week 6: The Social Network (Graphs)
 
-Graphs are just an evolution of Trees. While Trees flow strictly downwards from a root, Graphs are a wild web of connections, where anyone can be connected to anyone.
+Welcome to Week 6! 🎉
 
-## 🕸️ Graphs
-Think of a Graph like a map of cities. The cities are **Nodes** (or Vertices), and the highways connecting them are **Edges**. Or, think of Facebook: you are a node, your friends are nodes, and the friendship between you is an edge.
+Graphs are basically Trees that have gone completely wild. 
+While a Tree flows neatly downwards from a single root, a **Graph** is a messy web where absolutely anyone can be connected to anyone.
 
-### How do we store a Graph in code?
-We usually use an **Adjacency List**. It's just a HashMap where the Key is a Node, and the Value is a List of all the Nodes it connects to.
+Let's untangle it. 👇
+
+---
+
+## 🕸️ What exactly is a Graph?
+
+Think of Facebook. You are a **Node**. Your friends are also **Nodes**. The friendship between you is the **Edge** connecting you.
+
+Google Maps is a Graph too! The cities are Nodes, and the highways connecting them are Edges.
+
+### 💻 Storing a Graph in Java (Adjacency List)
+We can't just use a simple `left` and `right` pointer anymore because you might have 500 friends.
+Instead, we use a `HashMap` where the Key is You, and the Value is a List of all your friends!
 
 ```java
 import java.util.*;
 
-// Creating a Social Network Graph
+// Creating our Social Network
 HashMap<String, List<String>> graph = new HashMap<>();
 
-// Initializing the people
+// Adding people to the network
 graph.put("Alice", new ArrayList<>());
 graph.put("Bob", new ArrayList<>());
-graph.put("Charlie", new ArrayList<>());
 
-// Adding Friendships (Edges)
-graph.get("Alice").add("Bob"); // Alice is friends with Bob
-graph.get("Alice").add("Charlie"); // Alice is friends with Charlie
+// Connecting them (Drawing the Edges)
+graph.get("Alice").add("Bob"); // Alice added Bob!
 ```
 
 ---
 
-## 🧠 Core Patterns: BFS and DFS
-To explore a graph, we need to make sure we don't walk in circles! We must keep track of where we've been using a `HashSet` (the VIP list of places we've visited).
+## 🧠 Core Patterns: How to explore the Web
 
-### 1. Breadth-First Search (BFS) - The Water Ripple
-BFS explores the graph layer by layer, exactly like dropping a stone in a pond and watching the ripples expand. It explores all direct neighbors first, then neighbors of neighbors. **We use a Queue for BFS.**
+If you wander around a Graph randomly, you will walk in circles forever. We MUST use a `HashSet` (a VIP visited list) to keep track of where we've already been.
+
+There are two ways to explore:
+
+### 1. The Water Ripple (Breadth-First Search / BFS) 💧
+Imagine dropping a stone in a pond. The ripples expand outward layer by layer. 
+BFS explores all of your direct friends first. Then it explores your friends-of-friends. 
+**Cheat Code:** BFS always uses a **Queue**.
 
 ```java
 public void bfs(String startNode, HashMap<String, List<String>> graph) {
     Queue<String> queue = new LinkedList<>();
-    HashSet<String> visited = new HashSet<>();
+    HashSet<String> visited = new HashSet<>(); // Keep track!
     
     queue.offer(startNode);
     visited.add(startNode);
@@ -44,24 +58,32 @@ public void bfs(String startNode, HashMap<String, List<String>> graph) {
         String current = queue.poll();
         System.out.println("Visiting: " + current);
         
-        // Add all unvisited neighbors to the back of the queue
+        // Add all unvisited neighbors to the line
         for (String neighbor : graph.get(current)) {
             if (!visited.contains(neighbor)) {
                 queue.offer(neighbor);
-                visited.add(neighbor); // Mark as visited immediately!
+                visited.add(neighbor); // Mark visited BEFORE they even process!
             }
         }
     }
 }
 ```
 
-### 2. Depth-First Search (DFS) - The Maze Runner
-DFS picks a path and runs down it as far as possible until it hits a dead end, then it backs up and tries another path. **We use Recursion (or a Stack) for DFS.**
+### 2. The Maze Runner (Depth-First Search / DFS) 🏃‍♂️
+DFS picks one path and sprints down it as fast and far as possible until it hits a dead end. Then it backs up and tries another path. 
+**Cheat Code:** DFS uses **Recursion** (or a Stack).
 
-### 🎯 Your Practice Checklist (LeetCode)
-1. `Flood Fill`
+> [!WARNING]
+> If a problem asks for the **"Shortest Path"**, you MUST use **BFS**. 
+> If a problem asks you to find a generic path or fill an area, **DFS** is usually easier to code.
+
+---
+
+## 🎯 Your Mission (LeetCode Checklist)
+
+1. `Flood Fill` *(Literally the MS Paint bucket tool)*
 2. `Find if Path Exists in Graph`
-3. `Number of Islands` (Medium - A classic!)
-4. `Max Area of Island` (Medium)
-5. `Rotting Oranges` (Medium - Perfect use case for BFS)
-6. `Clone Graph` (Medium)
+3. `Number of Islands` *(Medium - A legendary interview question)*
+4. `Max Area of Island` *(Medium)*
+5. `Rotting Oranges` *(Medium - Perfect BFS simulation!)*
+6. `Clone Graph` *(Medium)*
