@@ -99,11 +99,11 @@ To speed things up, we use **HashSets** and **HashMaps**. We will learn how they
 ## 🎯 Your Mission (LeetCode Checklist)
 Try these out! Don't spend more than 45 minutes on one problem. If you're stuck, look at the solutions file, understand it, and type it out!
 
-1. `Running Sum of 1d Array` *(Easy warmup!)*
-2. `Contains Duplicate` *(Hint: VIP List!)*
-3. `Two Sum` *(Hint: Contacts App!)*
-4. `Move Zeroes`
-5. `Majority Element`
-6. `Squares of a Sorted Array`
+1. [`Running Sum of 1d Array`](https://leetcode.com/problems/running-sum-of-1d-array/) *(Easy warmup!)*
+2. [`Contains Duplicate`](https://leetcode.com/problems/contains-duplicate/) *(Hint: VIP List!)*
+3. [`Two Sum`](https://leetcode.com/problems/two-sum/) *(Hint: Contacts App!)*
+4. [`Move Zeroes`](https://leetcode.com/problems/move-zeroes/)
+5. [`Majority Element`](https://leetcode.com/problems/majority-element/)
+6. [`Squares of a Sorted Array`](https://leetcode.com/problems/squares-of-a-sorted-array/)
 
 You've got this! ☕💻

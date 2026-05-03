@@ -81,9 +81,9 @@ DFS picks one path and sprints down it as fast and far as possible until it hits
 
 ## 🎯 Your Mission (LeetCode Checklist)
 
-1. `Flood Fill` *(Literally the MS Paint bucket tool)*
-2. `Find if Path Exists in Graph`
-3. `Number of Islands` *(Medium - A legendary interview question)*
-4. `Max Area of Island` *(Medium)*
-5. `Rotting Oranges` *(Medium - Perfect BFS simulation!)*
-6. `Clone Graph` *(Medium)*
+1. [`Flood Fill`](https://leetcode.com/problems/flood-fill/) *(Literally the MS Paint bucket tool)*
+2. [`Find if Path Exists in Graph`](https://leetcode.com/problems/find-if-path-exists-in-graph/)
+3. [`Number of Islands`](https://leetcode.com/problems/number-of-islands/) *(Medium - A legendary interview question)*
+4. [`Max Area of Island`](https://leetcode.com/problems/max-area-of-island/) *(Medium)*
+5. [`Rotting Oranges`](https://leetcode.com/problems/rotting-oranges/) *(Medium - Perfect BFS simulation!)*
+6. [`Clone Graph`](https://leetcode.com/problems/clone-graph/) *(Medium)*

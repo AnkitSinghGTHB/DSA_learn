@@ -98,10 +98,10 @@ public void exploreTree(TreeNode root) {
 
 ## 🎯 Your Mission (LeetCode Checklist)
 
-1. `Maximum Depth of Binary Tree`
-2. `Invert Binary Tree` *(Google famously asked this!)*
-3. `Same Tree`
-4. `Symmetric Tree`
-5. `Diameter of Binary Tree`
-6. `Subtree of Another Tree`
-7. `Lowest Common Ancestor of a Binary Search Tree` *(Medium)*
+1. [`Maximum Depth of Binary Tree`](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+2. [`Invert Binary Tree`](https://leetcode.com/problems/invert-binary-tree/) *(Google famously asked this!)*
+3. [`Same Tree`](https://leetcode.com/problems/same-tree/)
+4. [`Symmetric Tree`](https://leetcode.com/problems/symmetric-tree/)
+5. [`Diameter of Binary Tree`](https://leetcode.com/problems/diameter-of-binary-tree/)
+6. [`Subtree of Another Tree`](https://leetcode.com/problems/subtree-of-another-tree/)
+7. [`Lowest Common Ancestor of a Binary Search Tree`](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) *(Medium)*

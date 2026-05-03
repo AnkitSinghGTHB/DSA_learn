@@ -92,9 +92,9 @@ You need two numbers that add up to 10.
 ## 🎯 Your Mission (LeetCode Checklist)
 Time to use those cheat codes! 
 
-1. `Valid Anagram`
-2. `Ransom Note`
-3. `First Unique Character in a String`
-4. `Intersection of Two Arrays`
-5. `Word Pattern`
-6. `Group Anagrams` *(Medium - This one is tricky, check the solution if stuck!)*
+1. [`Valid Anagram`](https://leetcode.com/problems/valid-anagram/)
+2. [`Ransom Note`](https://leetcode.com/problems/ransom-note/)
+3. [`First Unique Character in a String`](https://leetcode.com/problems/first-unique-character-in-a-string/)
+4. [`Intersection of Two Arrays`](https://leetcode.com/problems/intersection-of-two-arrays/)
+5. [`Word Pattern`](https://leetcode.com/problems/word-pattern/)
+6. [`Group Anagrams`](https://leetcode.com/problems/group-anagrams/) *(Medium - This one is tricky, check the solution if stuck!)*

@@ -83,9 +83,9 @@ public int maxProfit(int[] prices) {
 
 ## 🎯 Your Mission (LeetCode Checklist)
 
-1. `Best Time to Buy and Sell Stock` *(Greedy)*
-2. `Assign Cookies` *(Greedy)*
-3. `Maximum Average Subarray I` *(Sliding Window)*
-4. `Minimum Add to Make Parentheses Valid` *(Medium)*
-5. `Longest Substring Without Repeating Characters` *(Medium - The ultimate Sliding Window test)*
-6. `Longest Repeating Character Replacement` *(Medium)*
+1. [`Best Time to Buy and Sell Stock`](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) *(Greedy)*
+2. [`Assign Cookies`](https://leetcode.com/problems/assign-cookies/) *(Greedy)*
+3. [`Maximum Average Subarray I`](https://leetcode.com/problems/maximum-average-subarray-i/) *(Sliding Window)*
+4. [`Minimum Add to Make Parentheses Valid`](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) *(Medium)*
+5. [`Longest Substring Without Repeating Characters`](https://leetcode.com/problems/longest-substring-without-repeating-characters/) *(Medium - The ultimate Sliding Window test)*
+6. [`Longest Repeating Character Replacement`](https://leetcode.com/problems/longest-repeating-character-replacement/) *(Medium)*

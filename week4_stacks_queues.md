@@ -98,9 +98,9 @@ When you finally see a closing bracket in the string, you just pop your stack an
 
 ## 🎯 Your Mission (LeetCode Checklist)
 
-1. `Valid Parentheses` *(The ultimate Stack problem)*
-2. `Baseball Game`
-3. `Next Greater Element I`
-4. `Implement Queue using Stacks`
-5. `Min Stack` *(Medium)*
-6. `Evaluate Reverse Polish Notation` *(Medium)*
+1. [`Valid Parentheses`](https://leetcode.com/problems/valid-parentheses/) *(The ultimate Stack problem)*
+2. [`Baseball Game`](https://leetcode.com/problems/baseball-game/)
+3. [`Next Greater Element I`](https://leetcode.com/problems/next-greater-element-i/)
+4. [`Implement Queue using Stacks`](https://leetcode.com/problems/implement-queue-using-stacks/)
+5. [`Min Stack`](https://leetcode.com/problems/min-stack/) *(Medium)*
+6. [`Evaluate Reverse Polish Notation`](https://leetcode.com/problems/evaluate-reverse-polish-notation/) *(Medium)*

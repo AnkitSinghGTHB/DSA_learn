@@ -106,10 +106,10 @@ How do you find the exact middle of a scavenger hunt if you don't know how long 
 
 ## 🎯 Your Mission (LeetCode Checklist)
 
-1. `Reverse String` *(The ultimate two-pointer warmup)*
-2. `Valid Palindrome`
-3. `Middle of the Linked List` *(Fast/Slow runners!)*
-4. `Merge Two Sorted Lists`
-5. `Reverse a Linked List` *(Extremely famous interview question)*
-6. `Linked List Cycle`
-7. `Remove Nth Node From End of List` *(Medium)*
+1. [`Reverse String`](https://leetcode.com/problems/reverse-string/) *(The ultimate two-pointer warmup)*
+2. [`Valid Palindrome`](https://leetcode.com/problems/valid-palindrome/)
+3. [`Middle of the Linked List`](https://leetcode.com/problems/middle-of-the-linked-list/) *(Fast/Slow runners!)*
+4. [`Merge Two Sorted Lists`](https://leetcode.com/problems/merge-two-sorted-lists/)
+5. [`Reverse a Linked List`](https://leetcode.com/problems/reverse-linked-list/) *(Extremely famous interview question)*
+6. [`Linked List Cycle`](https://leetcode.com/problems/linked-list-cycle/)
+7. [`Remove Nth Node From End of List`](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) *(Medium)*

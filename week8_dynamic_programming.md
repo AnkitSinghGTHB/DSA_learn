@@ -87,11 +87,11 @@ public int fibBottomUp(int n) {
 
 ## 🎯 Your Final Mission (LeetCode Checklist)
 
-1. `Climbing Stairs` *(This is literally just the Fibonacci sequence in disguise!)*
-2. `Min Cost Climbing Stairs`
-3. `House Robber` *(Medium - You can't rob two houses next to each other. Maximize your loot!)*
-4. `Coin Change` *(Medium)*
-5. `Longest Increasing Subsequence` *(Medium - The ultimate final test)*
+1. [`Climbing Stairs`](https://leetcode.com/problems/climbing-stairs/) *(This is literally just the Fibonacci sequence in disguise!)*
+2. [`Min Cost Climbing Stairs`](https://leetcode.com/problems/min-cost-climbing-stairs/)
+3. [`House Robber`](https://leetcode.com/problems/house-robber/) *(Medium - You can't rob two houses next to each other. Maximize your loot!)*
+4. [`Coin Change`](https://leetcode.com/problems/coin-change/) *(Medium)*
+5. [`Longest Increasing Subsequence`](https://leetcode.com/problems/longest-increasing-subsequence/) *(Medium - The ultimate final test)*
 
 > [!TIP]
 > **You did it.** You have finished the Couch to Coder DSA roadmap. 
