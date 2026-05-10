@@ -81,11 +81,37 @@ public int maxProfit(int[] prices) {
 
 ---
 
+## 🏁 The Matrix (The Chessboard)
+
+A **Matrix** is just an array of arrays. Think of it like a Chessboard or a parking lot where you have **Rows** and **Columns**.
+
+**The Logic:** 
+To visit every spot, you use a "Nested Loop" (a loop inside a loop). 
+1. The outer loop picks a **Row**.
+2. The inner loop walks through every **Column** in that row.
+
+```java
+int[][] board = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+
+for (int r = 0; r < board.length; r++) {
+    for (int c = 0; c < board[0].length; c++) {
+        System.out.println("At Row " + r + ", Col " + c + " is: " + board[r][c]);
+    }
+}
+```
+
+---
+
 ## 🎯 Your Mission (LeetCode Checklist)
 
 1. [`Best Time to Buy and Sell Stock`](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) *(Greedy)*
 2. [`Assign Cookies`](https://leetcode.com/problems/assign-cookies/) *(Greedy)*
 3. [`Maximum Average Subarray I`](https://leetcode.com/problems/maximum-average-subarray-i/) *(Sliding Window)*
-4. [`Minimum Add to Make Parentheses Valid`](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) *(Medium)*
-5. [`Longest Substring Without Repeating Characters`](https://leetcode.com/problems/longest-substring-without-repeating-characters/) *(Medium - The ultimate Sliding Window test)*
-6. [`Longest Repeating Character Replacement`](https://leetcode.com/problems/longest-repeating-character-replacement/) *(Medium)*
+4. [`Longest Substring Without Repeating Characters`](https://leetcode.com/problems/longest-substring-without-repeating-characters/) *(The ultimate Sliding Window test)*
+5. [`Spiral Matrix`](https://leetcode.com/problems/spiral-matrix/) *(Medium - Matrix practice)*
+6. [`Rotate Image`](https://leetcode.com/problems/rotate-image/) *(Medium - Matrix practice)*
+7. [`Set Matrix Zeroes`](https://leetcode.com/problems/set-matrix-zeroes/) *(Medium - Matrix practice)*

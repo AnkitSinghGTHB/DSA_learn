@@ -86,6 +86,56 @@ for (int num : numbers) {
 
 ---
 
+## 🧵 Strings (The Bead Necklace)
+
+A **String** is just an array of characters. Think of it like a bead necklace where each bead is a letter.
+
+> [!IMPORTANT]
+> **The Java Catch:** In Java, Strings are "immutable" (unchangeable). If you want to change a letter in a string, Java actually creates a whole new necklace! 
+> 
+> To fix this, we use a **StringBuilder**. It's like a necklace that lets you pop beads on and off easily.
+
+```java
+String name = "Couch";
+// name[0] = 'B'; // ❌ ERROR! You can't do this in Java.
+
+// ✨ Use StringBuilder instead:
+StringBuilder sb = new StringBuilder("Couch");
+sb.setCharAt(0, 'B'); // Now it's "Bouch"
+System.out.println(sb.toString());
+```
+
+---
+
+## 🍀 Kadane's Algorithm (The Lucky Streak)
+
+Imagine you are playing a game. Some rounds you win money (+), some rounds you lose money (-). 
+**Kadane's Algorithm** helps you find the single "Luckiest Streak" (the contiguous subarray with the highest sum).
+
+**The Logic:** 
+As you play, you keep track of your `currentLuck`. 
+1. If your `currentLuck` drops below zero, you say "Forget this!" and start your streak over from the current round. 
+2. You always remember the `bestLuck` you've ever had during the whole game.
+
+```java
+public int maxSubArray(int[] nums) {
+    int bestLuck = nums[0];
+    int currentLuck = 0;
+    
+    for (int num : nums) {
+        currentLuck += num; // Add the current round to your streak
+        bestLuck = Math.max(bestLuck, currentLuck); // Is this our new record?
+        
+        if (currentLuck < 0) {
+            currentLuck = 0; // If streak turns sour, reset it to zero!
+        }
+    }
+    return bestLuck;
+}
+```
+
+---
+
 ## 🤫 Sneak Peek: The Cheat Code (HashSets & HashMaps)
 
 For problems like *Contains Duplicate* and *Two Sum*, checking every single box one-by-one is just too slow. 
@@ -105,5 +155,8 @@ Try these out! Don't spend more than 45 minutes on one problem. If you're stuck,
 4. [`Move Zeroes`](https://leetcode.com/problems/move-zeroes/)
 5. [`Majority Element`](https://leetcode.com/problems/majority-element/)
 6. [`Squares of a Sorted Array`](https://leetcode.com/problems/squares-of-a-sorted-array/)
+7. [`Maximum Subarray`](https://leetcode.com/problems/maximum-subarray/) *(The Lucky Streak!)*
+8. [`Roman to Integer`](https://leetcode.com/problems/roman-to-integer/) *(String Practice)*
+9. [`Longest Common Prefix`](https://leetcode.com/problems/longest-common-prefix/) *(String Practice)*
 
 You've got this! ☕💻

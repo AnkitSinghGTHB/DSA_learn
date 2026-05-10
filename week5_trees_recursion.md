@@ -96,6 +96,16 @@ public void exploreTree(TreeNode root) {
 
 ---
 
+## ↩️ Backtracking (The "Oops, Wrong Way" Bridge)
+
+Before we finish, there's a special way to use Recursion called **Backtracking**. 
+
+Think of it like exploring a tree, but you are carrying a backpack. As you go down a branch, you put something in your backpack. When you hit a dead end, you **take that item back out** of your backpack before you climb back up. This leaves you ready to explore the next branch!
+
+*We will dive deep into this in **Week 11**, but for now, just know that Recursion is the engine that powers these "Choose Your Own Adventure" algorithms.*
+
+---
+
 ## 🎯 Your Mission (LeetCode Checklist)
 
 1. [`Maximum Depth of Binary Tree`](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
